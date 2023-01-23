@@ -1,11 +1,11 @@
 {
-    "name": "phpstandard/library",
-    "description": "Skeleton to create a composer library",
-    "type": "project",
+    "name": "phpstandard/http-server-dispatcher",
+    "description": "Common interface for HTTP server request dispatchers and router implementations.",
+    "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "PhpStandard\\PackageNamespace\\": "src/"
+            "PhpStandard\\Http\\Server\\": "src/"
         }
     },
     "authors": [
