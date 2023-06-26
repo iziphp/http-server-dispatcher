@@ -1,11 +1,11 @@
 {
-    "name": "phpstandard/http-server-dispatcher",
-    "description": "Common interface for HTTP server request dispatchers and router implementations.",
+    "name": "iziphp/http-server-dispatcher",
+    "description": "Common interface for HTTP server request dispatcher implementations.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "PhpStandard\\Http\\Server\\": "src/"
+            "Easy\\Http\\Server\\": "src/"
         }
     },
     "authors": [
@@ -14,6 +14,11 @@
             "email": "or.vusal@gmail.com"
         }
     ],
+    "autoload-dev": {
+        "psr-4": {
+            "Easy\\Http\\Server\\Tests\\": "tests/"
+        }
+    },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
         "phpstan/phpstan": "^1.8",
@@ -37,5 +42,11 @@
         "fix": [
             "@phpcbf"
         ]
+    },
+    "require": {
+        "php": "^8.2",
+        "psr/http-message": "^1.0",
+        "psr/http-server-handler": "^1.0",
+        "psr/http-server-middleware": "^1.0"
     }
 }
